@@ -38,7 +38,7 @@ export const numberToWord = number => {
     { value: 1, str: "one" }
   ];
   // debugger
-  const result = "";
+  let result = "";
   for (let n of NS) {
     if (number >= n.value) {
       if (number <= 20) {
@@ -46,8 +46,8 @@ export const numberToWord = number => {
         number -= n.value;
         if (number > 0) result += " ";
       } else {
-        const t = Math.floor(number / n.value);
-        const d = number % n.value;
+        let t = Math.floor(number / n.value);
+        let d = number % n.value;
         if (d > 0) {
           return n.value.toString().length <= 2
             ? n.str + " " + numberToWord(d)
