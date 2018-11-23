@@ -1,6 +1,6 @@
 {
   "name": "@provasks/tiny",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Removes all spaces from a string",
   "license": "MIT",
   "repository": "provasks/tiny",
