@@ -5,6 +5,7 @@
   "license": "MIT",
   "repository": "provasks/tiny",
   "main": "index.js",
+  "url": "https://github.com/provasks/tiny.git",
   "keywords": [
     "tiny",
     "npm",
