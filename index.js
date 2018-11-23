@@ -1,7 +1,4 @@
-class tiny {
-  removeSpace(string) {
-    if (typeof string !== "string") throw new TypeError("Tiny wants a string!");
-    return string.replace(/\s/g, "");
-  }
-}
-module.exports = tiny;
+import { removeSpace, reverse } from "./string/index.js";
+import { print } from "./common/index.js";
+
+export const greetings = name => print(`Hello ${name}`);
