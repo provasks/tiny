@@ -74,3 +74,21 @@ export let once = () => {
   console.log("fired");
   once = () => {};
 };
+
+export const errorHander = (
+  message,
+  source,
+  lineNumber,
+  colNumber,
+  errorObject
+) => {
+  console.error(
+    `ERROR: 
+    Message: ${message} 
+    Source: ${source} 
+    Linenumber: ${lineNumber}
+    Column Number: ${colNumber}
+    Eroor Oboject: ${errorObject}`
+  );
+  return true;
+};
